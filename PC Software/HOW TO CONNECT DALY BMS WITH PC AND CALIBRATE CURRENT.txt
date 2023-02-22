@@ -1,0 +1,44 @@
+https://www.gobelpower.com/how-to-connect-daly-bms-with-pc-and-calibrate-current_f26.html
+
+HOW TO CONNECT DALY BMS WITH PC AND CALIBRATE CURRENT
+By Kelly posted 2022-06-07 12:20:03
+Here is how to calibrate current reading of Daly BMS.
+
+Connect BMS with batteries, and connect BMS with PC by USB-UART cable or USB-RS485 cable.
+
+ 
+
+1. Download Daly BMS PC software (Windows) here: https://drive.google.com/file/d/10qiVy_A2NzTkcIC9I7R6tcQPkQ1Tct5y/view?usp=sharing
+
+ 
+
+2. Unzip and open "PCMaster.exe".
+
+how to calibrate current reading of Daly BMS
+
+3. Top right click "CommSet".
+
+how to calibrate current reading of Daly BMS
+
+ 
+
+4. Choose "CommPort", click "Open Port". If the port is not right one, close port and choose another one.
+
+how to calibrate current reading of Daly BMS
+
+ 
+
+5. Software will show battery information.
+
+how to calibrate current reading of Daly BMS
+
+ 
+
+6. Top choose "Engineering Model". 
+
+Stop charge and discharge, click "Current 0A Calibration".
+
+Charge or discharge at 10A (here need a current meter to measure current), click "Curent 10A Calibration".
+
+Restart BMS to try if current calibrated.
+
