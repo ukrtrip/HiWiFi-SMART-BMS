@@ -1,0 +1,44 @@
+<!DOCTYPE HTML><html>
+<head>
+ <title>HiWiFi SMART BMS</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" type="text/css" href="assets/style.css" />
+ <script type="text/javascript" src="assets/js.js"></script>
+</head>
+<body>
+ <div class="hd">
+  <h1>HiWiFi SMART BMS</h1>
+  <h2>WiFi setup</h2>
+ </div>
+ <div class="tm">
+ <a href="/">Home</a><a href="/settings">Settings</a><a href="/setup" class="se">WiFi Setup</a>
+ </div> 
+<div class="mn">
+ <div class="cn"> 
+   <form method="POST">
+    <div class="b3">
+	 <p>Connected to: <b>%S1%</b></p>
+	 <ul>
+	  <li class="tc"><div class="tl">SSID</div><div>RSSI</div><div>Channel</div></li>
+	  <span id="slist"><h2 style="color:red">scanning wifi network...</h2></span>
+	 </ul>
+     <label for="ssid">SSID</label>
+     <input type="text" id="ssid" name="ssid" required value="%S0%"><br>
+     <label for="pass">Password</label>
+     <input type="password" id="pass" name="pass" value=""><br>
+     <input type="submit" value="Save">
+    </div> 
+   </form>
+ </div>
+</div>
+ <div class="ft">
+  <p><a href="/json">JSON main</a>
+  </p>
+  <p><a href="/update">Upgrade Firmware</a>
+  </p>
+ </div>
+ <script type="text/javascript">
+ window.addEventListener('load', onLoadSetup);
+</script>
+</body></html>

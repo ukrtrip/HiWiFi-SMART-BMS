@@ -1,0 +1,61 @@
+html{font-family:Arial,Helvetica,sans-serif}
+body{margin:0;padding:0;text-align:center;min-width:290px;width:100%}
+red{color:red}
+green{color:green}
+.mn{text-align:center}
+.hd{background-color:#143642;overflow:hidden;}
+.hd h1{font-size:1.85rem;color:#317f9b;margin:16px 0;padding:0}
+.hd h2{font-size:1.5rem;margin:0;padding:12px 0;color:#143642;background-color:#317f9b}
+.tm {padding:15px 0;display:inline-block;white-space:nowrap}
+.tm a{padding:10px 15px;margin:0 3px;text-align:center;color:#eee;background-color:#317f9b;text-decoration:none}
+.tm a:hover{background-color:#296e87;color:#ccc}
+.tm a.se{background-color:#143642;color:#fff}
+input[type=text],input[type=password]{font-size:1.1rem;padding:5px 8px;margin:4px 0;display:inline-block;border:1px solid #ccc;box-sizing:border-box;box-shadow:2px 2px 12px 1px rgba(140,140,140,.3)}
+input[type=text]:focus,input[type=password]:focus{background-color:#eee}
+button, input[type=submit]{width:130px;padding:10px 0;font-size:16px;text-align:center;color:#fff;background-color:#317f9b;cursor:pointer;border:none;outline:none}
+button:active,input[type=submit]:active{transform:translateY(2px)}
+button:hover,input[type=submit]:hover{background-color:#296e87}
+.cn {text-align:center;padding:10px;color:#003333; margin: auto; max-width:600px}
+.cn .b1 p{margin:auto;width:112px;display:inline-block;border:1px solid #ccc;margin:10px 6px;padding:8px 2px;box-shadow:2px 2px 12px 1px rgba(140,140,140,.3);background-color:#F8F7F9}
+.cn .b1 p b{display:table;margin:auto;border-top:1px solid #e3e3e3;color:#990033;font-size:1.65rem;padding-top:5px}
+.cn .b1 p:hover{box-shadow:4px 4px 12px 1px rgba(140,140,140,.6)}
+.cn .b2{border-top:1px solid #ccc;margin:auto}
+.cn .b2 p{padding:4px 2px;margin:0;border-bottom:1px dashed #eee;text-align:left}
+.cn .b2 p:hover{background-color:#eee}
+.cn .b2 p b{float:right;color:#444}
+.cn .bu p {padding:14px 5px;border:none}
+.cn .bu p:hover{background-color:#fff}
+.cn .bu p button{margin:3px}
+.ce{text-align:center;font-weight:bolder}
+.bl{border:1px solid #ccc;display:inline-block;margin-top:8px;width:100%;padding:8px 0}
+.bl ul{list-style-type:none;padding:8px;margin:0;text-align:left}
+.bl ul li{display:inline-block;width:100%;padding:8px 0}
+.bl ul li input{float:right;width:170px;margin:-6px 0 0 0}
+.bl ul li label{float:right}
+.bl input[type=submit]{padding:6px 0;margin-left:8px;width:80px;float:left}
+.errmes{display:none;color:red;font-size:12px;margin-top:12px;text-align:right}
+.mes{display:none;color:green;font-size:12px;text-align:right}
+.b3 input[type=submit]{padding:6px 0;box-shadow:2px 2px 12px 3px rgba(140,140,140,.6);margin-top:25px;width:80px}
+.b3 label{display:block; margin-top:15px}
+.b3 p{font-size:1.2rem;padding-bottom:15px;border-bottom:5px dashed #eee}
+.b3 ul{list-style-type:none;font-size:12px;padding:0;}
+.b3 ul li{margin:auto;width:100%;border-bottom:1px dashed #003333;white-space:nowrap;}
+.b3 ul li:hover{background-color:#eee;cursor:pointer}
+.b3 ul li.tc{border-top:1px solid;background-color:#ccc;cursor:default;font-weight:bolder;border-bottom:1px solid}
+.b3 ul li div{width:30%;display:inline-block;padding:8px 3px;padding:8px 3px}
+.state{font-size:1.5rem;color:#8c8c8c;font-weight:bold}
+.ft{overflow:hidden;background-color:#317f9b;text-align:center}
+.ft p{display:inline-block;width:140px}
+.ft a{color:#003333}
+.ft a:hover{color:#ccc}
+.sw{position:relative;display:inline-block;width:50px;height:18px}
+.sw input{opacity:0;width:0;height:0}
+.sl{text-align:right;font-size:11px;padding:3px;position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#E74C3C;-webkit-transition:.4s;transition:.4s}
+.sl:before{position:absolute;content:"";height:12px;width:12px;left:5px;bottom:3px;background-color:white;-webkit-transition:.4s;transition:.4s}
+input:checked + .sl{background-color:#2ECC71;text-align:left;}
+input:focus + .sl{box-shadow: 0 0 1px #2ECC71; }
+input:checked + .sl:before{-webkit-transform:translateX(28px);-ms-transform:translateX(28px);transform:translateX(28px)}
+#heart{font-size:20px;color:#e00;animation:beat .45s infinite alternate;transform-origin:center;float:right;padding-right:4px}
+@keyframes beat{to{transform:scale(1.3);}}
+#bh2{display:none}
+#bh{float:right;font-size:9px;color:#e00;width:15px;height:10px}

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML><html>
+<head>
+ <title>HiWiFi SMART BMS</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" type="text/css" href="assets/style.css" />
+ <script type="text/javascript" src="assets/js.js"></script>
+</head>
+<body>
+ <div class="hd">
+  <h1>HiWiFi SMART BMS</h1>
+  <h2>BMS Settings</h2>
+ </div>
+ <div class="tm">
+  <a href="/">Home</a><a href="/settings" class="se">Settings</a><a href="/setup">WiFi Setup</a>
+ </div> 
+<div class="mn">
+ <div class="cn"> 
+   <div class="b2 bu">
+    <p>Set Discharge MOS <b><label class="sw"><input type="checkbox" id="dFet" class="but"><span class="sl" id="dFetT"></span></label></b></p>
+    <p>Set Charge MOS <b><label class="sw"><input type="checkbox" id="cFet" class="but"><span class="sl" id="cFetT"></span></label></b></p>
+	<div class="bl">
+	<form name="m" method="POST" onsubmit="return setForm()">
+	 <ul>
+	  <li class="ce">MQTT settings</li>
+	  <li>Server<input type="text" name="m0" value="%M0%"></li>
+	  <li>Port<input type="text" name="m1" value="%M1%"><div class="errmes" id="m1e">Port must be 1-65535, default is 1883</div></li>
+	  <li>User<input type="text" name="m2" value="%M2%"></li>
+	  <li>Password<input type="text" name="m3" value="%M3%"></li>
+	  <li>Topic<input type="text" name="m4" value="%M4%"></li>
+	  <li>Interval<input type="text" name="m5" value="%M5%"><div class="errmes" id="m5e">Interval must be 5-3600 sec</div></li>
+	  <li>Activate<label class="sw"><input type="checkbox" id="mc"><span class="sl"></span></label></li>
+ 	  <li class="ce">TCP-UART settings</li>
+	  <li>Port<input type="text" name="t1" value="%T1%"><div class="errmes" id="t1e">Port must be 1-65535, default is 502</div></li>
+	  <li>Activate<label class="sw"><input type="checkbox" id="tc"><span class="sl"></span></label></li>
+	 </ul>
+	 <input type="hidden" value="%M6%" id="ms" name="m6">
+	 <input type="hidden" value="%T2%" id="ts" name="t2">
+	 <input type="submit" value="Save"><div id="mqtt" class="mes">connected to MQTT-server:<br>%M0%</div>
+	 </form>
+	</div>
+	<p><button id="resbms" class="but">Reset BMS</button><button id="resesp" class="but">Restart ESP</button></p>
+   </div>
+ </div>
+</div>
+ <div class="ft">
+  <p><a href="/json">JSON main</a>
+  </p>
+  <p><a href="/update">Upgrade Firmware</a>
+  </p>
+ </div>
+ <script type="text/javascript">
+ window.addEventListener('load', onLoadControl);
+</script>
+</body></html>

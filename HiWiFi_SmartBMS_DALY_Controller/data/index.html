@@ -1,0 +1,57 @@
+<!DOCTYPE HTML><html>
+<head>
+ <title>HiWiFi SMART BMS</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" type="text/css" href="assets/style.css" />
+ <script type="text/javascript" src="assets/js.js"></script>
+</head>
+<body>
+ <div class="hd">
+  <h1>HiWiFi SMART BMS</h1>
+  <h2>SmartBMS WiFi Controller</h2>
+ </div>
+ <div class="tm">
+  <a href="/" class="se">Home</a><a href="/settings">Settings</a><a href="/setup">WiFi Setup</a>
+ </div> 
+<div class="mn">
+ <div class="cn">
+  <div class="b1">
+   <p>Battery voltage<b><span id="voltage">-</span> V</b></p>
+   <p>Load current<b><span id="current">-</span> A</b></p>  
+   <p>RSOC<b><span id="soc">-</span> %</b></p>
+   <p>Temperature<b><span id="temp">-</span> C</b></p>
+  </div> 
+  <div class="b2">
+   <p>Remaining Capacity (mAh):<b id="capacity">-</b></p>
+   <p>Charge/Discharge status: <b id="status">-</b></p>
+   <p>Set Discharge MOS: <b><label class="sw"><input type="checkbox" id="dFet" class="but"><span class="sl" id="dFetT"></span></label></b></p>
+   <p>Set Charge MOS: <b><label class="sw"><input type="checkbox" id="cFet" class="but"><span class="sl" id="cFetT"></span></label></b></p>
+   <p>Number of Cells:<b id="cells">-</b></p>
+   <p>Number of Temp Sensors:<b id="tSensors">-</b></p>
+   <p>BMS Charge/Discharge Cycles:<b id="cycles">-</b></p>
+   <p>BMS Heartbeat: <i id="bh2"></i><i id="bh"></i><span id="heart">&#x2665;</span></p>  
+   <p>Cell balance active: <b><label class="sw"><input type="checkbox" id="balancer" class="but" disabled><span class="sl" id="balancerT"></span></label></b></p>
+   <p>Cell balance states:<b id="cellsB">-</b></p> 
+   <p>Cells Voltage (V):<b id="cellsV">-</b></p>
+   <p>Highest Cell Voltage (V): <b id="maxCV">-</b></p>
+   <p>Lowest Cell Voltage (V): <b id="minCV">-</b></p>
+   <p>Difference betwen cells (V): <b id="difCV">-</b></p>
+   <p>MQTT-Server: <b id="mqtt">-</b></p>
+  </div>
+ </div>
+</div>
+ <div class="ft">
+  <p>Model: <span id="model"></span>
+   <br>F/W: <span id="fw"></span>
+   <br>ESP Uptime: <span id="uptime"></span>
+  </p>
+  <p>SSID: %S0%
+   <br>RSSI: <span id="rssi"></span> dBm 
+   <br>Heap: <span id="heap"></span> bytes
+  </p>
+ </div>
+<script type="text/javascript">
+ window.addEventListener('load', onLoad);
+</script>
+</body></html>
